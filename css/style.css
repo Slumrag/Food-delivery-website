@@ -6,6 +6,7 @@
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -87,3 +88,158 @@ body {
   bottom: -5px;
   right: 0;
 }
+.slide {
+  position: relative;
+  height: 400px;
+  background: #bbb;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  overflow: hidden;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(14, 14, 14, 0.43) 43.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.slide-content {
+  max-width: 400px;
+  position: relative;
+}
+.light-text,
+.light-text .button-primary {
+  color: #fff;
+}
+.slide-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 50px;
+  line-height: 51px;
+}
+.slide-text {
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+.button-primary {
+  background: #f47322;
+}
+.button-default {
+  background-color: #fff;
+  color: #5f5f61;
+}
+.button {
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  padding: 12px 52px;
+  display: inline-block;
+}
+.slide-summer {
+  background-image: url("../img/summer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-fall {
+  background-image: url("../img/fall.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-vitamin {
+  background-image: url("../img/vitamin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 32px;
+  max-width: 570px;
+  min-height: 380px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card::before {
+  z-index: -1;
+
+  content: "";
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-top: 4px;
+  margin-bottom: 21px;
+}
+.card-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  max-width: 200px;
+}
+.card-price {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+.card-delivery {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+/* .sweet {
+  background-image: url("../img/sweet_bascket.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.low-effort {
+  background-image: url("../img/low_effort.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
