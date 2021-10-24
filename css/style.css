@@ -142,6 +142,7 @@ body {
   color: #5f5f61;
 }
 .button {
+  cursor: pointer;
   border-radius: 25px;
   font-weight: 500;
   font-size: 14px;
@@ -170,12 +171,14 @@ body {
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  margin: -20px;
 }
 .card {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   padding: 32px;
+  margin: 20px;
   max-width: 570px;
   min-height: 380px;
   display: flex;
@@ -185,7 +188,6 @@ body {
 }
 .card::before {
   z-index: -1;
-
   content: "";
   position: absolute;
 
@@ -243,3 +245,221 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 } */
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+.delivery-week {
+  padding: 100px 0;
+}
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.delivery-card {
+  width: 275px;
+  height: 182px;
+
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  margin: 15px;
+}
+.delivery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.delivery-tag {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 5px 10px;
+}
+.tag-health {
+  color: #49494f;
+  background: #d0fd89;
+}
+.tag-vegetables {
+  color: #fff;
+  background: #aebc41;
+}
+.tag-meat {
+  color: #fff;
+  background: #b86b78;
+}
+.tag-poultry {
+  color: #fff;
+  background: #d68334;
+}
+.tag-fish {
+  color: #fff;
+  background: #cd6255;
+}
+.tag-children {
+  color: #49494f;
+  background: #fffdbf;
+}
+.tag-parents {
+  color: #49494f;
+  background: #f6fdc8;
+}
+.tag-selebration {
+  color: #49494f;
+  background: #fef7fe;
+}
+
+.section-grey {
+  background: #f6f6f6;
+}
+.category {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.tabs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 62px;
+}
+.tabs-link {
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #49494f;
+  margin-right: 58px;
+}
+.tabs-link.active {
+  color: #f37321;
+}
+.tabs-content {
+  display: flex;
+  margin: -20px;
+  justify-content: space-between;
+}
+.tabs-card {
+  margin: 20px;
+  max-width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.tabs-image {
+  max-width: 100%;
+}
+.tabs-card-content {
+  padding: 23px;
+}
+.tabs-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+.tabs-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tabs-price {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+}
+.tabs-weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+.button-outline {
+  padding: 15px 25px;
+  background-color: transparent;
+  border: 2px solid #f37321;
+  box-sizing: border-box;
+  border-radius: 33px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+}
+.button-center {
+  padding: 15px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  width: 315px;
+}
+
+.advantages {
+  padding: 100px 0;
+}
+.advantages-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-bottom: 52px;
+}
+.advantages-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: -20px;
+}
+.advantages-card {
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  max-width: 270px;
+  text-align: center;
+  padding: 30px 25px 25px 25px;
+  margin: 20px;
+}
+
+.footer {
+  padding: 40px 0;
+  background: #f6f6f6;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  margin-right: 50px;
+}
+.footer-link {
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration: underline;
+  margin-right: 50px;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.social-link {
+  margin-left: 20px;
+}
