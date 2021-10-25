@@ -116,7 +116,24 @@ body {
 }
 
 .slide-content {
-  max-width: 400px;
+  max-width: 500px;
+  position: relative;
+}
+
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.slider-button {
+  cursor: pointer;
+}
+.swiper {
   position: relative;
 }
 .light-text,
@@ -437,6 +454,17 @@ body {
   padding: 30px 25px 25px 25px;
   margin: 20px;
 }
+.advantages-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-top: 34px;
+  margin-bottom: 13px;
+}
+.advantages-info {
+  font-size: 14px;
+  line-height: 22px;
+}
 
 .footer {
   padding: 40px 0;
@@ -462,4 +490,95 @@ body {
 }
 .social-link {
   margin-left: 20px;
+}
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .search-form {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 40px);
+  }
+  .advantages-cards {
+    flex-wrap: wrap;
+  }
+  .advantages-card {
+    max-width: 50%;
+    max-width: calc(50% - 40px);
+  }
+}
+@media (max-width: 990px) {
+  .container {
+    max-width: 750px;
+  }
+  .slide {
+    padding: 70px;
+  }
+  .delivery-card {
+    width: calc(50% - 40px);
+  }
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    margin-right: 40px;
+  }
+  .footer-link {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 770px) {
+  .container {
+    max-width: 560px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .search-form {
+    order: 5;
+    margin: 15px 0 30px 0;
+  }
+  .promo {
+    flex-wrap: wrap;
+  }
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    margin-bottom: 30px;
+    max-width: 60%;
+  }
+  .footer-link {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 570px) {
+  .container {
+    max-width: 90%;
+  }
+  .tabs-card {
+    max-width: 100%;
+  }
+  .advantages-card {
+    max-width: 100%;
+  }
+  .footer-social {
+    margin: 0;
+  }
+  .footer-nav {
+    margin-bottom: 30px;
+  }
+  .social-link {
+    margin-right: 20px;
+    margin-left: 0;
+  }
 }
